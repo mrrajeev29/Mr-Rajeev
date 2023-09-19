@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        #i1{
+            background: url('C:/Users/Lenovo/Downloads/pngtree-flat-business-login-box-login-page-image_544861.jpg');
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-dark text-white shadow p-2 mb-5" style="height: 60px;">
+        <div class="nav"> 
+            <a href="index.html" class="nav-link text-white">HOME</a>
+            <a href="https://linktr.ee/MrRajeev" class="nav-link text-white">MENU</a>
+            <a href="index.html" class="nav-link text-white">ABOUT</a>
+            <a href="index.html" class="nav-link text-white">CONTACT</a>
+        </div>
+        <div class="nav"> 
+            <a href="signup.html" class="nav-link text-white">SIGNUP</a>
+            <a href="login.html" class="nav-link text-white">LOGIN</a>
+        </div>
+    </nav>
+    <div id="i1">
+    <form onSubmit = "return password(this)" action="index.html" style="opacity: 0.8;background-color:white; width: 50%; height: 500px; margin-left: 410px; margin-top:">
+        <h1 style="text-align: center; font-style: oblique;">Enter the following details to Signup</h1>
+        <table>
+            <tr>
+                <td>
+                    <h4 style="margin-left: 40px" id="fn">First Name&emsp;&emsp;&emsp;</h4>    
+                </td>
+                <td>
+                    <input type="text" for="fn" style="width: 180%;" placeholder="                            First Name" required/>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <td>
+                    <h4 style="margin-left: 43px" id="ln">Last Name&emsp;&emsp;&emsp;</h4>
+                </td>
+                <td>
+                    <input type="text" style="width: 180%;" for="ln" placeholder="                            Last Name" required/>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <td>
+                    <h4 style="margin-left: 62px" id="mail">Email&emsp;&emsp;&emsp;&emsp;&ensp;</h4>
+                </td>
+                <td>
+                    <input type="email" for="mail" placeholder="                                Email" style="width: 180%;" />
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <td><h4 style="margin-left: 51px" id="gen">Gender&emsp;&emsp;&emsp;&emsp;</h4></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><input type="radio" for="gen" name="abc">&emsp;&emsp;Male</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" for="gen" name="abc">&emsp;&emsp;Female</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <td>
+                    <h4 style="margin-left: 29px" id="ep">Enter Password&emsp;&ensp;</h4>
+                </td>
+                <td>
+                    <input type="password" for="ep" style="width: 180%;" id="i2"  placeholder="                         Enter Password" required/>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <td>
+                    <h4 style="margin-left: 9px" id="cp">Confirm Password&emsp;</h4>
+                </td>
+                <td>
+                    <input type="password" style="width: 180%;" for="cp" id="i3" placeholder="                       Confirm Password" required/>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <button class="btn btn-danger" onclick="password()" style="width: 374px; height: 30px; margin-left: 145px;" type="submit"><h6>Sign up</h6></button>
+        <br />
+        <br />
+    </form>
+    </div>
+    <div class="container my-4" style="margin-left:0px; margin-right: 0px; ">
+        <footer class="text-center text-lg-start text-white"  style="width: 120%;height: fit-content; background-color:black;">
+            <section class="mb-3 " style="margin-left: 0px;">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/AarabhMalhotra.29" role="button"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/PrinceG49181050" role="button"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://leetcode.com/mr_rajeev299/" role="button"><i class="fa fa-code"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/its_mr_rajeev/" role="button"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/rajeev-ranjan-9990b9226/" role="button"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/mrrajeev29" role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <div class="text-center p-3" style="background-color:gray"><span>2023 &copy; All Rights Reserved</span></div>
+        </footer>
+    </div>
+    <script>
+        function password(form)
+        {
+            var p1=document.getElementById("i2").value;
+            var p2=document.getElementById("i3").value;
+            if (p1!=p2)
+            {
+                alert("Password Unmatched.");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
